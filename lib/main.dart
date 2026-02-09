@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'plush.dart';
 import 'note.dart';
-import 'jjj.dart';
 
 void main() {
   runApp(const mainNav());
@@ -65,19 +64,6 @@ class HomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [Text('Note Food')],
-              ),
-            ),
-            SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => JApp()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text('Sample button')],
               ),
             ),
           ],
