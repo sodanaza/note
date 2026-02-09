@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Plushies());
 }
 final Uri _url = Uri.parse("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Plushies extends StatelessWidget {
+  const Plushies({super.key});
 
   @override
   Widget build(BuildContext context) {
