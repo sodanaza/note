@@ -11,18 +11,6 @@ class Plushies extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
     // Get the screen width
     double screenWidth = MediaQuery
         .of(context)
@@ -31,18 +19,9 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        leading: const Image(
-          image: NetworkImage(
-            "https://cdn.iconscout.com/icon/free/png-256/free-flutter-logo-icon-svg-download-png-1720090.png?f=webp",
-          ),
-          width: 20,
-          height: 20,
-        ),
         title: const Text("Spinning Plush"),
-        backgroundColor: Colors.amber,
       ),
       body: Container(
-        color: Colors.amberAccent.shade100,
         child: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -50,7 +29,7 @@ class MyHomePage extends StatelessWidget {
               GestureDetector(
                 onTap: _launchUrl,
                 child: Image(
-                  image: const AssetImage('assets/LowdPlushering.gif'),
+                  image: const AssetImage('assets/LowdPlushering.png'),
                   // Set width to 50% of the screen width
                   width: screenWidth * 0.5,
                   fit: BoxFit.contain,
